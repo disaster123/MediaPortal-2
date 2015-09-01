@@ -16,6 +16,7 @@ along with MediaPortal 2. If not, see <http://www.gnu.org/licenses/>.
 */
 #endregion
 
+using UPnP.Infrastructure;
 using UPnP.Infrastructure.Dv;
 
 
@@ -36,7 +37,8 @@ namespace MediaPortal.Extensions.UPnPRenderer
     }
     public void Start()
     {
-      Bind(SSDP_ADVERTISMENT_INTERVAL);
+      //UPnPConfiguration.USE_IPV6 = false;
+      Bind(SSDP_ADVERTISMENT_INTERVAL);      
     }
     public void Stop()
     {

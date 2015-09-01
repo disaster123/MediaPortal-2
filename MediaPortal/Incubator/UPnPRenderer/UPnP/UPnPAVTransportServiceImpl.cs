@@ -844,6 +844,7 @@ namespace MediaPortal.Extensions.UPnPRenderer
       return null;
     }
 
+    // just returns the vars
     private static UPnPError OnGetTransportSettings(DvAction action, IList<object> inParams,
       out IList<object> outParams, CallContext context)
     {
@@ -859,6 +860,7 @@ namespace MediaPortal.Extensions.UPnPRenderer
       return null;
     }
 
+    // not implemented
     private static UPnPError OnNext(DvAction action, IList<object> inParams,
       out IList<object> outParams, CallContext context)
     {
@@ -930,6 +932,7 @@ namespace MediaPortal.Extensions.UPnPRenderer
       return null;
     }
 
+    // not implemented
     private static UPnPError OnPrevious(DvAction action, IList<object> inParams,
       out IList<object> outParams, CallContext context)
     {
@@ -1031,6 +1034,7 @@ namespace MediaPortal.Extensions.UPnPRenderer
       return null;
     }
 
+    // not implemented
     private static UPnPError OnSetNextAVTransportURI(DvAction action, IList<object> inParams,
       out IList<object> outParams, CallContext context)
     {
@@ -1046,6 +1050,7 @@ namespace MediaPortal.Extensions.UPnPRenderer
       return null;
     }
 
+    // not really implemented
     private static UPnPError OnSetPlayMode(DvAction action, IList<object> inParams,
       out IList<object> outParams, CallContext context)
     {
