@@ -38,6 +38,12 @@
           </Border.Background>
         </Border>
 
+        <Rectangle Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Fill="Black" Opacity="0.5" Margin="-8,-8,-8,0">
+          <Rectangle.Effect>
+            <ZoomBlurEffect BlurAmount="0.01" CenterX="0.5" CenterY="1" />
+          </Rectangle.Effect>
+        </Rectangle>
+        
         <Border Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Background="#F2666666"> </Border>
         
         <ListView Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"

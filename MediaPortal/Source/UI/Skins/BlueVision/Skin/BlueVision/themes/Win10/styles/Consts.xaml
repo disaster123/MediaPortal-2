@@ -13,7 +13,7 @@
   <ResourceWrapper x:Key="FooterPanelHeight" Resource="220" />
 
   <!-- Grouped home layout -->
-  <ResourceWrapper x:Key="GridLayoutWidth" Resource="107" />
+  <ResourceWrapper x:Key="GridLayoutWidth" Resource="115" />
   <ResourceWrapper x:Key="GridLayoutHeight" Resource="100" />
 
   <!-- Player control -->
