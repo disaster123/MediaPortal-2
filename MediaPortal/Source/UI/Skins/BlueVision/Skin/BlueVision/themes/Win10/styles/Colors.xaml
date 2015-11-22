@@ -71,8 +71,8 @@
   <ResourceWrapper x:Key="ScrollBarBackgroundColor">
     <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
       <GradientStop Color="#00404040" Offset="0"/>
-      <GradientStop Color="{ThemeResource HomeNonFocusedColor}" Offset="0.40"/>
-      <GradientStop Color="{ThemeResource HomeNonFocusedColor}" Offset="0.60"/>
+      <GradientStop Color="White" Offset="0.40"/>
+      <GradientStop Color="White" Offset="0.60"/>
       <GradientStop Color="#00404040" Offset="1"/>
     </LinearGradientBrush>
   </ResourceWrapper>
@@ -81,8 +81,8 @@
   <ResourceWrapper x:Key="ScrollBarBackgroundXColor">
     <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
       <GradientStop Color="#00404040" Offset="0"/>
-      <GradientStop Color="{ThemeResource HomeNonFocusedColor}" Offset="0.40"/>
-      <GradientStop Color="{ThemeResource HomeNonFocusedColor}" Offset="0.60"/>
+      <GradientStop Color="{ThemeResource HomeNonFocusedColor}" Offset="0.30"/>
+      <GradientStop Color="{ThemeResource HomeNonFocusedColor}" Offset="0.70"/>
       <GradientStop Color="#00404040" Offset="1"/>
     </LinearGradientBrush>
   </ResourceWrapper>

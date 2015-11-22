@@ -4,7 +4,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     >
 
-  <ResourceWrapper x:Key="MEDIA_THUMB_Audio" Resource="175"/>
+  <ResourceWrapper x:Key="MEDIA_THUMB_Audio" Resource="179"/>
   
   <ResourceWrapper x:Key="MEDIA_THUMB_WIDTH" Resource="177.5"/>
   <ResourceWrapper x:Key="MEDIA_THUMB_HEIGHT" Resource="133"/>

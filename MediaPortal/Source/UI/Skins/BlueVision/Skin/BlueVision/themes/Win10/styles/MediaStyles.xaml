@@ -390,6 +390,7 @@
   <ControlTemplate x:Key="GridViewSeriesFilterItemTemplate">
     <Grid Margin="2,2,2,2" HorizontalAlignment="Center" VerticalAlignment="Center" Width="{StaticResource MEDIA_BANNER_WIDTH}" Height="{StaticResource MEDIA_BANNER_HEIGHT}">
       <Grid>
+        <Border CornerRadius="0" Background="Black" Opacity="0.2" Margin="0" BorderThickness="0"> </Border>
         <Image Width="{StaticResource MEDIA_BANNER_WIDTH}" Height="{StaticResource MEDIA_BANNER_HEIGHT}" Stretch="Fill" FallbackSource="VideoWide.png"
                HorizontalAlignment="Center" VerticalAlignment="Center">
           <Image.Source>
@@ -582,6 +583,7 @@
   <ControlTemplate x:Key="GridViewSeriesSeasonFilterItemTemplate">
     <Grid Margin="2,2,2,2" HorizontalAlignment="Center" VerticalAlignment="Center" Width="{StaticResource MEDIA_BANNER_WIDTH}" Height="{StaticResource MEDIA_BANNER_HEIGHT}">
       <Grid>
+        <Border CornerRadius="0" Background="Black" Opacity="0.2" Margin="0" BorderThickness="0"> </Border>
         <Image Width="{StaticResource MEDIA_BANNER_WIDTH}" Height="{StaticResource MEDIA_BANNER_HEIGHT}" Stretch="Fill" FallbackSource="VideoWide.png"
                HorizontalAlignment="Center" VerticalAlignment="Center">
           <Image.Source>
@@ -709,6 +711,7 @@
   <ControlTemplate x:Key="GridViewMovieItemTemplate">
     <Grid Width="{StaticResource MEDIA_POSTER_WIDTH}" Height="{StaticResource MEDIA_POSTER_HEIGHT}" Margin="3,2,3,2" HorizontalAlignment="Center" VerticalAlignment="Center">
       <Grid>
+        <Border CornerRadius="0" Background="Black" Opacity="0.2" Margin="0" BorderThickness="0"> </Border>
         <Image  HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="Fill" FallbackSource="VideoLarge.png" Source="{Binding MediaItem}" >
           <Image.Opacity>
             <MultiBinding Converter="{StaticResource ExpressionMultiValueConverter}" ConverterParameter="{}{0} ? {1} : {2}">
@@ -935,8 +938,9 @@
         <RowDefinition Height="*"/>
       </Grid.RowDefinitions>
 
+      <Border Grid.Column="0" Grid.Row="0" CornerRadius="0" Background="Black" Opacity="0.2" Margin="0" BorderThickness="0"> </Border>
       <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
-        <Image Source="{Binding MediaItem}" Stretch="UniformToFill" FallbackSource="VideoNormal.png"
+        <Image Source="{Binding MediaItem}" Stretch="Uniform" FallbackSource="VideoNormal.png"
                HorizontalAlignment="Center" VerticalAlignment="Center">
           <Image.Opacity>
             <MultiBinding Converter="{StaticResource ExpressionMultiValueConverter}" ConverterParameter="{}{0} ? {1} : {2}">
@@ -1227,12 +1231,12 @@
   <ControlTemplate x:Key="GridViewAudioItemTemplate">
     <Grid x:Name="ItemControl" Margin="2">
       <Grid.ColumnDefinitions>
-        <ColumnDefinition Width="179"/>
+        <ColumnDefinition Width="{ThemeResource MEDIA_THUMB_Audio}"/>
       </Grid.ColumnDefinitions>
       <Grid.RowDefinitions>
-        <RowDefinition Height="179"/>
+        <RowDefinition Height="{ThemeResource MEDIA_THUMB_Audio}"/>
       </Grid.RowDefinitions>
-
+      <Border Grid.Column="0" Grid.Row="0" CornerRadius="0" Background="Black" Opacity="0.2" Margin="0" BorderThickness="0"> </Border>
       <Grid>
         <Image x:Name="ItemTypeAudio" Stretch="Fill" Source="{Binding MediaItem}" FallbackSource="Audio_square.png">
           <Image.Opacity>
@@ -1397,18 +1401,18 @@
     </Grid>
   </ControlTemplate>
 
+
   <ControlTemplate x:Key="GridViewAlbumItemTemplate">
     <Grid x:Name="ItemControl" Margin="2">
       <Grid.ColumnDefinitions>
-        <ColumnDefinition Width="174"/>
+        <ColumnDefinition Width="{ThemeResource MEDIA_THUMB_Audio}"/>
       </Grid.ColumnDefinitions>
       <Grid.RowDefinitions>
-        <RowDefinition Height="175"/>
+        <RowDefinition Height="{ThemeResource MEDIA_THUMB_Audio}"/>
       </Grid.RowDefinitions>
+      <Border Grid.Column="0" Grid.Row="0" CornerRadius="0" Background="Black" Opacity="0.2" Margin="0" BorderThickness="0"> </Border>
       <Grid>
-        <Image x:Name="ItemTypeAudio" Grid.Row="0" Stretch="Fill"
-               HorizontalAlignment="Center" VerticalAlignment="Center" Source="{Binding MediaItem}"
-               FallbackSource="Audio_square.png" >
+        <Image x:Name="ItemTypeAudio" Stretch="Fill" FallbackSource="Audio_square.png"  >
           <Image.Source>
             <fanart:FanArtImageSource fanart:FanArtMediaType="Album" fanart:FanArtType="Poster" fanart:FanArtName="{Binding SimpleTitle}"/>
           </Image.Source>
@@ -1563,9 +1567,9 @@
 
   <ControlTemplate x:Key="GridViewImageItemTemplate">
     <Grid Margin="3,2,3,2" HorizontalAlignment="Center" VerticalAlignment="Center" Width="193" Height="128">
-
+      <Border Grid.Row="0" CornerRadius="0" Background="Black" Opacity="0.2" Margin="0" BorderThickness="0"> </Border>
       <Grid>
-        <Image Source="{Binding MediaItem}" Stretch="UniformToFill" FallbackSource="VideoNormal.png"
+        <Image Source="{Binding MediaItem}" Stretch="Uniform" FallbackSource="VideoNormal.png"
                HorizontalAlignment="Center" VerticalAlignment="Center">
           <Image.Opacity>
             <MultiBinding Converter="{StaticResource ExpressionMultiValueConverter}" ConverterParameter="{}{0} ? {1} : {2}">

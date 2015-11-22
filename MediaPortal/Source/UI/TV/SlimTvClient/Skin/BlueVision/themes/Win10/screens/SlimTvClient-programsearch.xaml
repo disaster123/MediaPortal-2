@@ -19,7 +19,7 @@
               DataContext="{Binding Source={StaticResource SlimTvProgramSearchModel}}">
 
         <Grid.ColumnDefinitions>
-          <ColumnDefinition Width="400"/>
+          <ColumnDefinition Width="350"/>
           <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
@@ -43,7 +43,7 @@
 
         <ListView Grid.Column="2" Grid.Row="0" Grid.RowSpan="3" 
               Margin="10" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-              Style="{ThemeResource ChannelWithLogoAndProgramListViewStyle}"
+              Style="{ThemeResource SearchProgramListViewStyle}"
               ItemsSource="{Binding Path=ProgramsList}"
               SelectionChanged="{CommandStencil UpdateProgram}">
           <ListView.Resources>
