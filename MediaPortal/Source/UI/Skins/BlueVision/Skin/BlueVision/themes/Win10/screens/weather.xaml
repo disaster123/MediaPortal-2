@@ -28,7 +28,7 @@
           </Rectangle.Effect>
         </Rectangle>
 
-        <Border Grid.Row="0" Grid.Column="0" BorderThickness="0" Background="#D9777777" Margin="-80,30,-75,30"/>
+        <Border Grid.Row="0" Grid.Column="0" BorderThickness="0" Background="{StaticResource GrayBackgroundWithBlurBehind}" Margin="-80,30,-75,30"/>
         
         <StackPanel Grid.Row="0" Grid.Column="0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"
             DataContext="{Binding Source={StaticResource Model}}">

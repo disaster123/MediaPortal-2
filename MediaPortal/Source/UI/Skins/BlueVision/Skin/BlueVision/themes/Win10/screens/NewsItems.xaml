@@ -22,7 +22,7 @@
           </Rectangle.Effect>
         </Rectangle>
 
-        <Border BorderThickness="0" Background="#D9777777" Margin="-80,30,-75,30" DockPanel.Dock="Center"/>
+        <Border BorderThickness="0" Background="#CC777777" Margin="-80,30,-75,30" DockPanel.Dock="Center"/>
         
         <!-- Items -->
         <ListView x:Name="newsitems" Margin="-75,35,-75,85" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"

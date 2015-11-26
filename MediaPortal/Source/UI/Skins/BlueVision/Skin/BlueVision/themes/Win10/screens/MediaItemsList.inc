@@ -32,7 +32,7 @@
 
     <Border Grid.Row="0" Margin="-30,20,50,6" >
       <Border.Background>
-        <SolidColorBrush Color="#D9777777"/>
+        <SolidColorBrush Color="{StaticResource GrayBackgroundWithBlurBehind}"/>
       </Border.Background>
       <Border.IsVisible>
         <Binding Source="{StaticResource ViewModeModel}" Path="LayoutType" Converter="{StaticResource ExpressionValueConverter}" ConverterParameter="{}{0} != {LayoutType}.{CoverLayout}"/>
