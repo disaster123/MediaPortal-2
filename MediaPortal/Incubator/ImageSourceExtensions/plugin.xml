@@ -1,0 +1,25 @@
+<Plugin
+    DescriptorVersion="1.0"
+    Name="ImageSourceExtensions"
+    PluginId="{4BB5CC31-89AB-49B0-8F63-6E3F1EB27036}"
+    Author="Brownard"
+    Copyright="GPL"
+    AutoActivate="true"
+    Description="">
+
+  <Version
+    PluginVersion="1.0"
+    ReleaseDate="2015-12-11 01:00:00 GMT+01:00"
+    CurrentAPI="1"/>
+
+  <DependsOn>
+    <CoreDependency Name="MediaPortal.Common" CompatibleAPI="1" />
+    <CoreDependency Name="MediaPortal.Utilities" CompatibleAPI="1" />
+    <PluginReference PluginId="{D87D92F0-5E71-470a-A2A4-430F90A28BF3}" CompatibleAPI="1"/> <!-- SkinEngine -->
+  </DependsOn>
+
+  <Runtime>
+    <Assembly FileName="ImageSourceExtensions.dll"/>
+  </Runtime>
+
+</Plugin>
