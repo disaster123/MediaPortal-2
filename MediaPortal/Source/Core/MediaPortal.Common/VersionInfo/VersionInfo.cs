@@ -5,9 +5,9 @@ using System.Reflection;
 // be deleted.
 [assembly: AssemblyCompany("Team MediaPortal")]
 [assembly: AssemblyProduct("MediaPortal 2")]
-[assembly: AssemblyCopyright("Copyright © Team MediaPortal 2007 - 2015")]
+[assembly: AssemblyCopyright("Copyright © Team MediaPortal 2007 - 2016")]
 // Note: Following two line will be modified by AssemblyInfoHelper in build process. The last 4 digits will be replaced by "YYMM" (year-month)
-[assembly: AssemblyVersion("2.0.0.1510")]
-[assembly: AssemblyFileVersion("2.0.0.1510")]
+[assembly: AssemblyVersion("2.0.0.1601")]
+[assembly: AssemblyFileVersion("2.0.0.1601")]
 // Note: This line will be filled by AssemblyInfoHelper in build process.
-[assembly: AssemblyInformationalVersion("morpheusxx/REWORK_FolderStructure-7b277d")]
+[assembly: AssemblyInformationalVersion("upstream/Weekly_20151230-dc9149")]
