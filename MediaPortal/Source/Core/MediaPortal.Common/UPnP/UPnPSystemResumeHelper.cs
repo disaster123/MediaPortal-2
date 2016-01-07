@@ -37,6 +37,7 @@ namespace MediaPortal.Common.UPnP
   {
     protected AsynchronousMessageQueue _messageQueue;
     protected UPnPServer _upnpServer;
+    protected Boolean suspended = false;
 
     public UPnPSystemResumeHelper(UPnPServer upnpServer)
     {
@@ -69,10 +70,15 @@ namespace MediaPortal.Common.UPnP
         {
           case SystemMessaging.MessageType.SystemStateChanged:
             SystemState newState = (SystemState)message.MessageData[SystemMessaging.NEW_STATE];
-            if (newState == SystemState.Resuming)
+            if (newState == SystemState.Resuming && suspended)
             {
-              ServiceRegistration.Get<ILogger>().Info("UPnPSystemResumeHelper: System resuming. Trigger UpdateAndAdvertise for UPnPServer.");
-              _upnpServer.UpdateAndAdvertise();
+              suspended = false;
+              ServiceRegistration.Get<ILogger>().Info("UPnPSystemResumeHelper: System resuming. Trigger UpdateConfiguration for UPnPServer.");
+              _upnpServer.UpdateConfiguration();
+            }
+            if (newState == SystemState.Suspending)
+            {
+              suspended = true;
             }
             break;
         }
